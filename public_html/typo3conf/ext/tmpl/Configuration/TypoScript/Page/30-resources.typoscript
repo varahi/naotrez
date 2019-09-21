@@ -1,0 +1,47 @@
+# manually inserted CSS files
+page.includeCSS {
+    10_fonts = https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700
+    20_animate  = EXT:tmpl/Resources/Public/css/animate.css
+    30_icomoon = EXT:tmpl/Resources/Public/css/icomoon.css
+    40_bootstrap  = EXT:tmpl/Resources/Public/css/bootstrap.css
+    50_flexslider  = EXT:tmpl/Resources/Public/css/flexslider.css
+    60_style  = EXT:tmpl/Resources/Public/css/style.css
+
+    # SCSS
+    #100_style = EXT:tmpl/Resources/Public/Scss/style.scss
+    #100_style.outputdir = EXT:tmpl/Resources/Public/CompiledCss/
+    #200_media_queries = EXT:tmpl/Resources/Public/Styles/media_queries.css
+}
+
+
+# JS libs that need to be inserted (can be used for internal and external libs)
+#page.includeJSlibs {
+#    10_jquery = EXT:tmpl/Resources/Public/Javascript/jquery-3.3.1.min.js
+#}
+
+page.includeJS {
+    10_modernizr = EXT:tmpl/Resources/Public/js/modernizr-2.6.2.min.js
+    20_respond = EXT:tmpl/Resources/Public/js/respond.min.js
+}
+
+# manually inserted JavaScript files
+page.includeJSFooter {
+    10_jquery = EXT:tmpl/Resources/Public/js/jquery.min.js
+    20_jquery_easing = EXT:tmpl/Resources/Public/js/jquery.easing.1.3.js
+    30_bootstrap = EXT:tmpl/Resources/Public/js/bootstrap.min.js
+    40_waypoints = EXT:tmpl/Resources/Public/js/jquery.waypoints.min.js
+    50_flexslider = EXT:tmpl/Resources/Public/js/jquery.flexslider-min.js
+    60_main = EXT:tmpl/Resources/Public/js/main.js
+}
+
+# Maybe include some JS stuff rather in footer than in header
+page.includeJSFooterlibs {
+
+}
+
+page {
+    headerData {
+        //998 = TEXT
+        //998.value =
+    }
+}
