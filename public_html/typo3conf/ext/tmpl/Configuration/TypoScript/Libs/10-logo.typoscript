@@ -1,0 +1,18 @@
+lib.logo >
+lib.logo = COA
+lib.logo {
+    wrap = <div id="fh5co-logo">|</div>
+    10 = IMAGE
+    10 {
+        file = EXT:tmpl/Resources/Public/images/logo.png
+        altText = {$config.page.header.logoTitle}
+        titleText = {$config.page.header.logoTitle}
+        file.width = 200
+        #file.height = 70
+        stdWrap.typolink.parameter =  {$config.navigation.rootPid}
+        #stdWrap.typolink.ATagParams = class=""
+        params = class="logo"
+        stdWrap.wrap = |
+        stdWrap.typolink.title = {$config.page.header.logoTitle}
+    }
+}
