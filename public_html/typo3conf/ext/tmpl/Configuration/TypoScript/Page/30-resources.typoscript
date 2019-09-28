@@ -6,6 +6,7 @@ page.includeCSS {
     40_bootstrap  = EXT:tmpl/Resources/Public/css/bootstrap.css
     50_flexslider  = EXT:tmpl/Resources/Public/css/flexslider.css
     60_style  = EXT:tmpl/Resources/Public/css/style.css
+    200_custom  = EXT:tmpl/Resources/Public/css/custom.css
 
     # SCSS
     #100_style = EXT:tmpl/Resources/Public/Scss/style.scss

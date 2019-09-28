@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" target-language="ru" datatype="plaintext" original="messages" date="2019-09-28T14:08:05Z">
+		<header>
+			<generator>LFEditor</generator>
+		</header>
+		<body>
+			<trans-unit id="news.moreLink" approved="yes">
+				<source><![CDATA[Read more]]></source>
+				<target><![CDATA[Подробнее...]]></target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

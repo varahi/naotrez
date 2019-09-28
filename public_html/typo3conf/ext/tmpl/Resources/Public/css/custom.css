@@ -1,0 +1,12 @@
+.blog-entry {
+}
+.blog-entry .desc {
+    padding: 25px;
+    min-height: 450px;
+}
+.blog-entry .blog-img img {
+    max-width: none;
+}
+audio {
+    width: 100%;
+}

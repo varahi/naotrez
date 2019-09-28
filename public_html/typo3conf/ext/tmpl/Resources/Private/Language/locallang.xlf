@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="messages" date="2019-08-20T13:55:07Z">
+	<file source-language="en" datatype="plaintext" original="messages" date="2019-09-28T14:08:05Z">
 		<header>
 			<generator>LFEditor</generator>
 		</header>
 		<body>
 			<trans-unit id="ce.teaser_card.more">
 				<source><![CDATA[More]]></source>
+			</trans-unit>
+			<trans-unit id="news.moreLink">
+				<source><![CDATA[Read more]]></source>
 			</trans-unit>
 			<trans-unit id="page.contacts">
 				<source><![CDATA[Contacts]]></source>
