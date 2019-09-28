@@ -25,6 +25,7 @@
 		"clickstorm/cs_seo": "^4.1",
 		"consolidation/robo": "^1",
 		"cweagans/composer-patches": "^1.6",
+		"de-swebhosting-typo3-extension/html5mediakit": "^9.0",
 		"deployer/deployer": "^6",
 		"fluidtypo3/vhs": "^5.2",
 		"georgringer/news": "^7.3",
