@@ -113,6 +113,9 @@ return [
         'gridelements' => [
             'packagePath' => 'typo3conf/ext/gridelements/',
         ],
+        'html5mediakit' => [
+            'packagePath' => 'typo3conf/ext/html5mediakit/',
+        ],
         'lfeditor' => [
             'packagePath' => 'typo3conf/ext/lfeditor/',
         ],

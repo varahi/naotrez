@@ -5,14 +5,14 @@ lib.logo {
     10 = IMAGE
     10 {
         file = EXT:tmpl/Resources/Public/images/logo.png
-        altText = {$config.page.header.logoTitle}
-        titleText = {$config.page.header.logoTitle}
+        altText = {$config.header.logoTitle}
+        titleText = {$config.header.logoTitle}
         file.width = 200
         #file.height = 70
         stdWrap.typolink.parameter =  {$config.navigation.rootPid}
         #stdWrap.typolink.ATagParams = class=""
         params = class="logo"
         stdWrap.wrap = |
-        stdWrap.typolink.title = {$config.page.header.logoTitle}
+        stdWrap.typolink.title = {$config.header.logoTitle}
     }
 }

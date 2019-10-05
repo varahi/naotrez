@@ -17,11 +17,11 @@ config {
     }
 
     header {
-        logoTitle =
+        logoTitle = группа "Наотрез"
         logoSmallTitle =
         bannerTitle =
-        phone = <a href="tel:+74959691730">(495) 969-17-30</a>
-        email = info@all-power.ru
+        #phone = <a href="tel:+74959691730">(495) 969-17-30</a>
+        email = info@naotrez.site
     }
 
 }

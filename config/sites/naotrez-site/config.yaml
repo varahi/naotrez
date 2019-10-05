@@ -4,16 +4,13 @@ baseVariants:
   -
     base: 'http://naotrez.localhost'
     condition: 'getenv("HOST_ENV") == "localdev"'
-#  -
-#    base: 'http://update.las-interactive.localhost'
-#    condition: 'getenv("HOST_ENV") == "localdev"'
 languages:
   -
     title: Russian
     enabled: true
     languageId: '0'
     base: /
-    typo3Language: de
+    typo3Language: ru
     locale: ru_RU.UTF-8
     iso-639-1: ru
     navigationTitle: Russian
