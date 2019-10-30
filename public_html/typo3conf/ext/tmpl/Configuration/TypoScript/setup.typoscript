@@ -10,3 +10,14 @@
 ##############
 #<INCLUDE_TYPOSCRIPT: source="DIR:EXT:tmpl/Ce/ce_mainpage_slider/Configuration/TypoScript/" extensions="ts">
 #<INCLUDE_TYPOSCRIPT: source="DIR:EXT:tmpl/Ce/ce_teaser_card/Configuration/TypoScript/" extensions="ts">
+
+/*
+lib.test = TEXT
+lib.test.value = test1
+
+[getTSFE() && getTSFE().id == 4]
+//[getTSFE().id == 4]
+    lib.test = TEXT
+    lib.test.value = test_tsfe
+[global]
+*/

@@ -8,6 +8,9 @@
 			<trans-unit id="news.layout.list_news">
 				<source><![CDATA[List News]]></source>
 			</trans-unit>
+			<trans-unit id="header.h2_animate-box">
+				<source><![CDATA[H2 animate box]]></source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>

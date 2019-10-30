@@ -29,7 +29,7 @@ mod.web_layout.BackendLayouts {
                     3 {
                         columns {
                             1 {
-                                name = Parallax
+                                name = Blog
                                 colPos = 2
                                 allowed = *
                             }
@@ -38,24 +38,9 @@ mod.web_layout.BackendLayouts {
                     4 {
                         columns {
                             1 {
-                                name = Certification
+                                name = Contact
                                 colPos = 3
-                            }
-                        }
-                    }
-                    5 {
-                        columns {
-                            1 {
-                                name = Unfooter
-                                colPos = 4
-                            }
-                        }
-                    }
-                    6 {
-                        columns {
-                            1 {
-                                name = Footer
-                                colPos = 5
+                                allowed = *
                             }
                         }
                     }

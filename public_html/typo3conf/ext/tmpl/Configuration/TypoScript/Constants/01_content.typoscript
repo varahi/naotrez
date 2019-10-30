@@ -1,0 +1,27 @@
+styles.content {
+    textmedia {
+        linkWrap.lightboxEnabled = 1
+        linkWrap.lightboxCssClass = fancybox
+        linkWrap.lightboxRelAttribute = fancybox[{field:uid}]
+    }
+}
+
+# Including EXT:fluid_styled_content's default constants
+<INCLUDE_TYPOSCRIPT: source="FILE:EXT:fluid_styled_content/Configuration/TypoScript/constants.typoscript">
+
+# Overriding EXT:fluid_styled_content's constants for template paths
+styles {
+    content {
+        textmedia.maxW = 800
+        textmedia.maxWInText = 800
+        textmedia.linkWrap.lightboxEnabled = 1
+        defaultHeaderType = 2
+    }
+
+    templates {
+        templateRootPath = EXT:tmpl/Resources/Private/Content/Templates/
+        partialRootPath = EXT:tmpl/Resources/Private/Content/Partials/
+        layoutRootPath = EXT:tmpl/Resources/Private/Content/Layouts/
+    }
+}
+

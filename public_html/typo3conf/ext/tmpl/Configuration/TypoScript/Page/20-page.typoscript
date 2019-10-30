@@ -86,30 +86,17 @@ page {
                 stdWrap.required = 1
             }
 
-            content_parallax < styles.content.get
-            content_parallax {
+            content_blog < styles.content.get
+            content_blog {
                 select.where = colPos=2
                 stdWrap.required = 1
             }
 
-            content_certification < styles.content.get
-            content_certification {
+            content_contact < styles.content.get
+            content_contact {
                 select.where = colPos=3
                 stdWrap.required = 1
             }
-
-            content_unfooter < styles.content.get
-            content_unfooter {
-                select.where = colPos=4
-                stdWrap.required = 1
-            }
-
-            content_footer < styles.content.get
-            content_footer {
-                select.where = colPos=5
-                stdWrap.required = 1
-            }
-
 
         }
 

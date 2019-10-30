@@ -20,12 +20,12 @@ plugin.tx_tmpl {
 
 lib.contentElement {
     templateRootPaths {
-        200 = EXT:tmpl/Resources/Private/Extensions/fluid_styled_content/Templates/
+        200 = EXT:tmpl/Resources/Private/Content/Templates/
     }
     partialRootPaths {
-        200 = EXT:tmpl/Resources/Private/Extensions/fluid_styled_content/Partials/
+        200 = EXT:tmpl/Resources/Private/Content/Partials/
     }
     layoutRootPaths {
-        200 = EXT:tmpl/Resources/Private/Extensions/fluid_styled_content/Layouts/
+        200 = EXT:tmpl/Resources/Private/Content/Layouts/
     }
 }

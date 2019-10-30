@@ -16,7 +16,7 @@ TCEFORM.tt_content.header_layout {
     }
     addItems {
         # H2 Headers
-        #10 = LLL:EXT:tmpl/Resources/Private/Language/locallang_db.xlf:header.h2_left
+        10 = LLL:EXT:tmpl/Resources/Private/Language/locallang_db.xlf:header.h2_animate-box
     }
 }
 

@@ -23,6 +23,9 @@ config {
         #phone = <a href="tel:+74959691730">(495) 969-17-30</a>
         email = info@naotrez.site
     }
+    footer {
+        copyright = &copy; 2019 группа "Наотрез"
+    }
 
 }
 
