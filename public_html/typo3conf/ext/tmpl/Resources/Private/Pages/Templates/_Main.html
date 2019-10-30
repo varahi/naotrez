@@ -1,0 +1,28 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"
+      xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers"
+      xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
+      xmlns:flux="http://typo3.org/ns/FluidTYPO3/Flux/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+
+<f:layout name="Main"/>
+
+<f:section name="content_slider">
+    {content -> f:format.raw()}
+</f:section>
+<f:section name="content_teaser">
+    {content_teaser -> f:format.raw()}
+</f:section>
+<f:section name="content_parallax">
+    {content_parallax -> f:format.raw()}
+</f:section>
+<f:section name="content_certification">
+    {content_certification -> f:format.raw()}
+</f:section>
+<f:section name="content_unfooter">
+    {content_unfooter -> f:format.raw()}
+</f:section>
+<f:section name="content_footer">
+    {content_footer -> f:format.raw()}
+</f:section>
+
+</html>
