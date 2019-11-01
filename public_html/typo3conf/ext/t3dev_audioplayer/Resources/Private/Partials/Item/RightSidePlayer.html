@@ -1,0 +1,25 @@
+<!-- Right Side Player -->
+<div id="amplitude-right">
+    <f:for each="{items}" as="item" iteration="iterator">
+        <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="{iterator.index}">
+
+            <div class="song-now-playing-icon-container">
+                <div class="play-button-container">
+
+                </div>
+                <img class="now-playing" src="typo3conf/ext/t3dev_audioplayer/Resources/Public/img/now-playing.svg"/>
+            </div>
+            <div class="song-meta-data">
+                <span class="song-title">{item.title}</span>
+                <span class="song-artist">{item.artist}</span>
+            </div>
+            <a href="#c64" class="bandcamp-link" target="_blank">
+                <img class="bandcamp-grey" src="typo3conf/ext/t3dev_audioplayer/Resources/Public/img/bandcamp-grey.svg"/>
+                <img class="bandcamp-white" src="typo3conf/ext/t3dev_audioplayer/Resources/Public/img/bandcamp-white.svg"/>
+            </a>
+            <span class="song-duration">{item.songDuration}</span>
+
+        </div>
+    </f:for>
+</div>
+<!-- End Right Side Player -->

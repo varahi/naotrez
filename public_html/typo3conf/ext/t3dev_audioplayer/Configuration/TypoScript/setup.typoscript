@@ -1,15 +1,16 @@
 
-plugin.tx_t3devaudioplayer_t3devaudioplayer {
+plugin.tx_t3devaudioplayer {
     view {
         templateRootPaths.0 = EXT:{extension.shortExtensionKey}/Resources/Private/Templates/
-        templateRootPaths.1 = {$plugin.tx_t3devaudioplayer_t3devaudioplayer.view.templateRootPath}
+        templateRootPaths.1 = {$plugin.tx_t3devaudioplayer.view.templateRootPath}
         partialRootPaths.0 = EXT:t3dev_audioplayer/Resources/Private/Partials/
-        partialRootPaths.1 = {$plugin.tx_t3devaudioplayer_t3devaudioplayer.view.partialRootPath}
+        partialRootPaths.1 = {$plugin.tx_t3devaudioplayer.view.partialRootPath}
         layoutRootPaths.0 = EXT:tx_t3devaudioplayer/Resources/Private/Layouts/
-        layoutRootPaths.1 = {$plugin.tx_t3devaudioplayer_t3devaudioplayer.view.layoutRootPath}
+        layoutRootPaths.1 = {$plugin.tx_t3devaudioplayer.view.layoutRootPath}
     }
     persistence {
-        storagePid = {$plugin.tx_t3devaudioplayer_t3devaudioplayer.persistence.storagePid}
+        //storagePid = {$plugin.tx_t3devaudioplayer.persistence.storagePid}
+        //storagePid = {settings.storagePage}
         #recursive = 1
     }
     features {

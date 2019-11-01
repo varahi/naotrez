@@ -1,5 +1,5 @@
 
-plugin.tx_t3devaudioplayer_t3devaudioplayer {
+plugin.tx_t3devaudioplayer {
     view {
         # cat=plugin.tx_t3devaudioplayer_t3devaudioplayer/file; type=string; label=Path to template root (FE)
         templateRootPath = EXT:t3dev_audioplayer/Resources/Private/Templates/

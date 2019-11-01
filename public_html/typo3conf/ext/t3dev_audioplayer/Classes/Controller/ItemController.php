@@ -15,7 +15,7 @@ namespace T3Dev\T3devAudioplayer\Controller;
 /**
  * ItemController
  */
-class ItemController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
+class ItemController extends AbstractController
 {
 
     /**
@@ -26,6 +26,7 @@ class ItemController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
      */
     protected $itemRepository = null;
 
+
     /**
      * action list
      * 
@@ -33,8 +34,13 @@ class ItemController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
      */
     public function listAction()
     {
-        $items = $this->itemRepository->findAll();
+
+        $this->setHeaders();
+        $storagePage = $this->settings['storagePage'];
+        //$items = $this->itemRepository->findAll();
+        $items = $this->itemRepository->findAllByPid($storagePage);
         $this->view->assign('items', $items);
+        $this->view->assign('storagePage', $storagePage);
     }
 
     /**

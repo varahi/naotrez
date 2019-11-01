@@ -1,0 +1,37 @@
+<script>
+    /*
+        Initializes AmplitudeJS
+    */
+    Amplitude.init({
+        "songs": [
+
+    <f:for each="{items}" as="item" iteration="iterator">
+        <f:alias map="{ang: {s: '{', e: '}'}}">
+
+
+          <f:if condition="{iterator.isLast}">
+            <f:then>
+    {ang.s}
+        "name": "{item.title}",
+        "artist": "{tem.artist}",
+        "album": "{item.album}",
+        "url": "{f:uri.typolink(parameter: '{item.songUrl}')}",
+        "cover_art_url": "{f:uri.image(image:item.cover.originalResource, treatIdAsReference:1 width:'350' height:'350')}"
+    {ang.e}
+            </f:then>
+            <f:else>
+    {ang.s}
+        "name": "{item.title}",
+        "artist": "{tem.artist}",
+        "album": "{item.album}",
+        "url": "{f:uri.typolink(parameter: '{item.songUrl}')}",
+        "cover_art_url": "{f:uri.image(image:item.cover.originalResource, treatIdAsReference:1 width:'350' height:'350')}"
+    {ang.e},
+            </f:else>
+          </f:if>
+        </f:alias>
+    </f:for>
+
+        ]
+    });
+</script>

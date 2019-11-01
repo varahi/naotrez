@@ -22,4 +22,19 @@ class ItemRepository extends \TYPO3\CMS\Extbase\Persistence\Repository
      * @var array
      */
     protected $defaultOrderings = ['sorting' => \TYPO3\CMS\Extbase\Persistence\QueryInterface::ORDER_ASCENDING];
+
+    /**
+     *
+     * @param integer $pid
+     */
+    public function findAllByPid($pid){
+
+        $query = $this->createQuery();
+        $storagePids = [$pid];
+        $query->getQuerySettings()->setStoragePageIds($storagePids);
+
+        return $query->execute();
+
+    }
+
 }

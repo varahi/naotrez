@@ -1,0 +1,41 @@
+<T3DataStructure>
+    <meta>
+        <langDisable>1</langDisable>
+    </meta>
+
+    <sheets>
+        <sDEF>
+            <ROOT>
+                <TCEforms>
+                    <sheetTitle>LLL:EXT:t3dev_audioplayer/Resources/Private/Language/locallang_db.xlf:tx_t3dev_audioplayer.flexforms_general.settings</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el>
+
+                    <!-- Storage Page -->
+                    <settings.storagePage>
+                        <TCEforms>
+                            <label>LLL:EXT:t3dev_audioplayer/Resources/Private/Language/locallang_db.xlf:tx_t3dev_audioplayer.flexforms_general.storage_page</label>
+                            <config>
+                                <type>group</type>
+                                <internal_type>db</internal_type>
+                                <allowed>pages</allowed>
+                                <size>1</size>
+                                <maxitems>1</maxitems>
+                                <minitems>0</minitems>
+                                <show_thumbs>1</show_thumbs>
+                                <wizards>
+                                    <suggest>
+                                        <type>suggest</type>
+                                    </suggest>
+                                </wizards>
+                            </config>
+                        </TCEforms>
+                    </settings.storagePage>
+
+
+                </el>
+            </ROOT>
+        </sDEF>
+    </sheets>
+</T3DataStructure>

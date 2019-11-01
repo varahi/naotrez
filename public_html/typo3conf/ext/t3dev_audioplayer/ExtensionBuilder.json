@@ -124,8 +124,8 @@
         },
         "extensionKey": "t3dev_audioplayer",
         "name": "T3Dev audio player",
-        "originalExtensionKey": "",
-        "originalVendorName": "",
+        "originalExtensionKey": "t3dev_audioplayer",
+        "originalVendorName": "T3Dev",
         "persons": [
             {
                 "company": "T3Dev",
@@ -150,7 +150,7 @@
     },
     "wires": [],
     "log": {
-        "last_modified": "2019-11-01 03:23",
+        "last_modified": "2019-11-01 03:38",
         "extension_builder_version": "9.10.2",
         "be_user": " (1)"
     }

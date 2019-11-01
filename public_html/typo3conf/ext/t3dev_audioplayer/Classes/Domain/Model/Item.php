@@ -147,27 +147,6 @@ class Item extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     }
 
     /**
-     * Returns the songDuration
-     * 
-     * @return string $songDuration
-     */
-    public function getSongDuration()
-    {
-        return $this->songDuration;
-    }
-
-    /**
-     * Sets the songDuration
-     * 
-     * @param string $songDuration
-     * @return void
-     */
-    public function setSongDuration($songDuration)
-    {
-        $this->songDuration = $songDuration;
-    }
-
-    /**
      * Returns the cover
      * 
      * @return \TYPO3\CMS\Extbase\Domain\Model\FileReference $cover
@@ -186,5 +165,26 @@ class Item extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     public function setCover(\TYPO3\CMS\Extbase\Domain\Model\FileReference $cover)
     {
         $this->cover = $cover;
+    }
+
+    /**
+     * Returns the songDuration
+     * 
+     * @return string songDuration
+     */
+    public function getSongDuration()
+    {
+        return $this->songDuration;
+    }
+
+    /**
+     * Sets the songDuration
+     * 
+     * @param string $songDuration
+     * @return void
+     */
+    public function setSongDuration($songDuration)
+    {
+        $this->songDuration = $songDuration;
     }
 }

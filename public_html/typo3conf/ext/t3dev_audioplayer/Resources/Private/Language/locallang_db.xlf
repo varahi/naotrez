@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="messages" date="2019-11-01T15:23:40Z" product-name="t3dev_audioplayer">
+	<file source-language="en" datatype="plaintext" original="messages" date="2019-11-01T15:38:33Z" product-name="t3dev_audioplayer">
 		<header/>
 		<body>
 			<trans-unit id="tx_t3devaudioplayer_domain_model_item">
@@ -30,6 +30,14 @@
 			<trans-unit id="tx_t3dev_audioplayer_t3devaudioplayer.description">
 				<source>T3Dev music player</source>
 			</trans-unit>
+
+			<trans-unit id="tx_t3dev_audioplayer.flexforms_general.settings">
+				<source>Settings</source>
+			</trans-unit>
+			<trans-unit id="tx_t3dev_audioplayer.flexforms_general.storage_page">
+				<source>Storage page</source>
+			</trans-unit>
+
 		</body>
 	</file>
 </xliff>

@@ -145,13 +145,16 @@ return [
             ],
         ],
         'song_url' => [
-            'exclude' => true,
+            'exclude' => false,
             'label' => 'LLL:EXT:t3dev_audioplayer/Resources/Private/Language/locallang_db.xlf:tx_t3devaudioplayer_domain_model_item.song_url',
             'config' => [
                 'type' => 'input',
+                'renderType' => 'inputLink',
                 'size' => 30,
-                'eval' => 'trim'
-            ],
+                'max' => 255,
+                'eval' => 'trim',
+                'softref' => 'typolink'
+            ]
         ],
         'song_duration' => [
             'exclude' => true,
