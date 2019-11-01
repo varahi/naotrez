@@ -1,0 +1,15 @@
+
+plugin.tx_t3devaudioplayer_t3devaudioplayer {
+    view {
+        # cat=plugin.tx_t3devaudioplayer_t3devaudioplayer/file; type=string; label=Path to template root (FE)
+        templateRootPath = EXT:t3dev_audioplayer/Resources/Private/Templates/
+        # cat=plugin.tx_t3devaudioplayer_t3devaudioplayer/file; type=string; label=Path to template partials (FE)
+        partialRootPath = EXT:t3dev_audioplayer/Resources/Private/Partials/
+        # cat=plugin.tx_t3devaudioplayer_t3devaudioplayer/file; type=string; label=Path to template layouts (FE)
+        layoutRootPath = EXT:t3dev_audioplayer/Resources/Private/Layouts/
+    }
+    persistence {
+        # cat=plugin.tx_t3devaudioplayer_t3devaudioplayer//a; type=string; label=Default storage PID
+        storagePid =
+    }
+}

@@ -1,0 +1,52 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<table class="tx-t3dev-audioplayer" >
+	<tr>
+		<td>
+			<f:translate key="tx_t3devaudioplayer_domain_model_item.title" />
+		</td>
+		<td>
+		{item.title}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_t3devaudioplayer_domain_model_item.artist" />
+		</td>
+		<td>
+		{item.artist}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_t3devaudioplayer_domain_model_item.album" />
+		</td>
+		<td>
+		{item.album}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_t3devaudioplayer_domain_model_item.song_url" />
+		</td>
+		<td>
+		{item.songUrl}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_t3devaudioplayer_domain_model_item.song_duration" />
+		</td>
+		<td>
+		{item.songDuration}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_t3devaudioplayer_domain_model_item.cover" />
+		</td>
+		<td>
+				<f:image src="{item.cover.originalResource.publicUrl}" width="200"/>
+		</td>
+	</tr>
+</table>
+</html>
