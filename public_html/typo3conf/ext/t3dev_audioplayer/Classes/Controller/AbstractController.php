@@ -32,12 +32,12 @@ class AbstractController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControl
             $pageRender->addJsFile($jsFilePlayer, 'text/javascript', true, false, '', true);
 
             if($theme == 'blue_playlist') {
-                $cssFileVibeo = $extPath . 'Resources/Public/blue-playlist/css/app.css';
+                $cssFile = $extPath . 'Resources/Public/blue-playlist/css/app.css';
             }
             if($theme == 'flat_black') {
-                $cssFileVibeo = $extPath . 'Resources/Public/flat-black/css/app.css';
+                $cssFile = $extPath . 'Resources/Public/flat-black/css/app.css';
             }
-            $pageRender->addCssFile($cssFileVibeo, 'stylesheet', 'all', '', '', true);
+            $pageRender->addCssFile($cssFile, 'stylesheet', 'all', '', '', true);
 
         }
     }

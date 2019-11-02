@@ -12,18 +12,21 @@
 				<f:render partial="BluePlaylist/RightSidePlayer" arguments="{_all}" />
 
 				<!-- Js script -->
-				<f:render partial="BluePlaylist/AmplitudeJS" arguments="{_all}" />
-				<f:render partial="BluePlaylist/AmplitudeInit" arguments="{_all}" />
+				<f:render partial="BluePlaylist/AmplitudeJS" arguments="{items:items}" />
+				<f:render partial="BluePlaylist/AmplitudeInit" />
 			</div>
 		</f:if>
 
 		<f:if condition="{settings.theme} == 'flat_black' ">
 			<div id="flat-black-player-container">
-				<f:render partial="FlatBlack/ListScreen" arguments="{item:item}" />
-				<f:render partial="FlatBlack/PlayerScreen" arguments="{item:item}" />
+				<!-- List Screen -->
+				<f:render partial="FlatBlack/ListScreen" arguments="{items:items}" />
+				<!-- PLay Screen -->
+				<f:render partial="FlatBlack/PlayerScreen" />
 			</div>
 
-			<f:render partial="FlatBlack/Functions.html" arguments="{item:item}" />
+			<!-- Js script -->
+			<f:render partial="FlatBlack/Functions.html" arguments="{items:items}" />
 		</f:if>
 
 	</f:section>

@@ -1,37 +1,37 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="messages" date="2019-11-01T15:38:33Z" product-name="t3dev_audioplayer">
-		<header/>
+	<file source-language="en" datatype="plaintext" original="messages" date="2019-11-02T17:33:31Z">
+		<header>
+			<generator>LFEditor</generator>
+		</header>
 		<body>
-			<trans-unit id="tx_t3devaudioplayer_domain_model_item">
-				<source>Item</source>
-			</trans-unit>
-			<trans-unit id="tx_t3devaudioplayer_domain_model_item.title">
-				<source>Title</source>
-			</trans-unit>
-			<trans-unit id="tx_t3devaudioplayer_domain_model_item.artist">
-				<source>Artist</source>
-			</trans-unit>
-			<trans-unit id="tx_t3devaudioplayer_domain_model_item.album">
-				<source>Album</source>
-			</trans-unit>
-			<trans-unit id="tx_t3devaudioplayer_domain_model_item.song_url">
-				<source>Song Url</source>
-			</trans-unit>
-			<trans-unit id="tx_t3devaudioplayer_domain_model_item.song_duration">
-				<source>Song Duration</source>
-			</trans-unit>
-			<trans-unit id="tx_t3devaudioplayer_domain_model_item.cover">
-				<source>Cover</source>
-			</trans-unit>
-
 			<trans-unit id="hide_playlist">
-				<source>Hide Playlist</source>
+				<source><![CDATA[Hide Playlist]]></source>
 			</trans-unit>
 			<trans-unit id="show_playlist">
-				<source>Show Playlist</source>
+				<source><![CDATA[Show Playlist]]></source>
 			</trans-unit>
-
+			<trans-unit id="tx_t3devaudioplayer_domain_model_item">
+				<source><![CDATA[Item]]></source>
+			</trans-unit>
+			<trans-unit id="tx_t3devaudioplayer_domain_model_item.album">
+				<source><![CDATA[Album]]></source>
+			</trans-unit>
+			<trans-unit id="tx_t3devaudioplayer_domain_model_item.artist">
+				<source><![CDATA[Artist]]></source>
+			</trans-unit>
+			<trans-unit id="tx_t3devaudioplayer_domain_model_item.cover">
+				<source><![CDATA[Cover]]></source>
+			</trans-unit>
+			<trans-unit id="tx_t3devaudioplayer_domain_model_item.song_duration">
+				<source><![CDATA[Song Duration]]></source>
+			</trans-unit>
+			<trans-unit id="tx_t3devaudioplayer_domain_model_item.song_url">
+				<source><![CDATA[Song Url]]></source>
+			</trans-unit>
+			<trans-unit id="tx_t3devaudioplayer_domain_model_item.title">
+				<source><![CDATA[Title]]></source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>

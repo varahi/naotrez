@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" target-language="ru" datatype="plaintext" original="messages" date="2019-11-02T17:33:31Z">
+		<header>
+			<generator>LFEditor</generator>
+		</header>
+		<body>
+			<trans-unit id="hide_playlist" approved="yes">
+				<source><![CDATA[Hide Playlist]]></source>
+				<target><![CDATA[Скрыть плейлист]]></target>
+			</trans-unit>
+			<trans-unit id="show_playlist" approved="yes">
+				<source><![CDATA[Show Playlist]]></source>
+				<target><![CDATA[Открыть плейлист]]></target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
