@@ -14,9 +14,11 @@ class AbstractController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControl
     * setHeaders
     * Set JS and CSS according to TS settings
     *
+    * @param string $theme
+    *
     * @return void
     */
-    protected function setHeaders() {
+    protected function setHeaders($theme) {
 
         if (TYPO3_MODE === 'FE') {
 
@@ -29,8 +31,14 @@ class AbstractController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControl
             $pageRender = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Page\PageRenderer::class);
             $pageRender->addJsFile($jsFilePlayer, 'text/javascript', true, false, '', true);
 
-            $cssFileVibeo = $extPath . 'Resources/Public/css/app.css';
+            if($theme == 'blue_playlist') {
+                $cssFileVibeo = $extPath . 'Resources/Public/blue-playlist/css/app.css';
+            }
+            if($theme == 'flat_black') {
+                $cssFileVibeo = $extPath . 'Resources/Public/flat-black/css/app.css';
+            }
             $pageRender->addCssFile($cssFileVibeo, 'stylesheet', 'all', '', '', true);
+
         }
     }
 

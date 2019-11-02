@@ -12,6 +12,27 @@
                 <type>array</type>
                 <el>
 
+                    <!-- Select Theme -->
+                    <settings.theme>
+                        <TCEforms>
+                            <label>LLL:EXT:t3dev_audioplayer/Resources/Private/Language/locallang_db.xlf:tx_t3dev_audioplayer.flexforms_general.theme</label>
+                            <config>
+                                <type>select</type>
+                                <renderType>selectSingle</renderType>
+                                <items>
+                                    <numIndex index="0">
+                                        <numIndex index="0">LLL:EXT:t3dev_audioplayer/Resources/Private/Language/locallang_db.xlf:tx_t3dev_audioplayer.flexforms_general.blue_playlist</numIndex>
+                                        <numIndex index="1">blue_playlist</numIndex>
+                                    </numIndex>
+                                    <numIndex index="1">
+                                        <numIndex index="0">LLL:EXT:t3dev_audioplayer/Resources/Private/Language/locallang_db.xlf:tx_t3dev_audioplayer.flexforms_general.flat_black</numIndex>
+                                        <numIndex index="1">flat_black</numIndex>
+                                    </numIndex>
+                                </items>
+                            </config>
+                        </TCEforms>
+                    </settings.theme>
+
                     <!-- Storage Page -->
                     <settings.storagePage>
                         <TCEforms>
@@ -32,7 +53,6 @@
                             </config>
                         </TCEforms>
                     </settings.storagePage>
-
 
                 </el>
             </ROOT>

@@ -48,6 +48,13 @@ class Item extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     protected $songUrl = '';
 
     /**
+     * pageUrl
+     *
+     * @var string
+     */
+    protected $pageUrl = '';
+
+    /**
      * songDuration
      * 
      * @var string
@@ -186,5 +193,26 @@ class Item extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
     public function setSongDuration($songDuration)
     {
         $this->songDuration = $songDuration;
+    }
+
+    /**
+     * Returns the pageUrl
+     *
+     * @return string $pageUrl
+     */
+    public function getPageUrl()
+    {
+        return $this->pageUrl;
+    }
+
+    /**
+     * Sets the pageUrl
+     *
+     * @param string $pageUrl
+     * @return void
+     */
+    public function setPageUrl($pageUrl)
+    {
+        $this->pageUrl = $pageUrl;
     }
 }

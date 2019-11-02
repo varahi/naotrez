@@ -21,10 +21,10 @@ return [
         'iconfile' => 'EXT:t3dev_audioplayer/Resources/Public/Icons/tx_t3devaudioplayer_domain_model_item.gif'
     ],
     'interface' => [
-        'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, title, artist, album, song_url, song_duration, cover',
+        'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, title, artist, album, song_url, song_duration, cover, page_url',
     ],
     'types' => [
-        '1' => ['showitem' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, title, artist, album, song_url, song_duration, cover, --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access, starttime, endtime'],
+        '1' => ['showitem' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, title, artist, album, song_url, song_duration, cover, page_url, --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.access, starttime, endtime'],
     ],
     'columns' => [
         'sys_language_uid' => [
@@ -147,6 +147,18 @@ return [
         'song_url' => [
             'exclude' => false,
             'label' => 'LLL:EXT:t3dev_audioplayer/Resources/Private/Language/locallang_db.xlf:tx_t3devaudioplayer_domain_model_item.song_url',
+            'config' => [
+                'type' => 'input',
+                'renderType' => 'inputLink',
+                'size' => 30,
+                'max' => 255,
+                'eval' => 'trim',
+                'softref' => 'typolink'
+            ]
+        ],
+        'page_url' => [
+            'exclude' => false,
+            'label' => 'LLL:EXT:t3dev_audioplayer/Resources/Private/Language/locallang_db.xlf:tx_t3devaudioplayer_domain_model_item.page_url',
             'config' => [
                 'type' => 'input',
                 'renderType' => 'inputLink',

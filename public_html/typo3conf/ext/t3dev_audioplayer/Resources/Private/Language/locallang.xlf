@@ -24,6 +24,14 @@
 			<trans-unit id="tx_t3devaudioplayer_domain_model_item.cover">
 				<source>Cover</source>
 			</trans-unit>
+
+			<trans-unit id="hide_playlist">
+				<source>Hide Playlist</source>
+			</trans-unit>
+			<trans-unit id="show_playlist">
+				<source>Show Playlist</source>
+			</trans-unit>
+
 		</body>
 	</file>
 </xliff>

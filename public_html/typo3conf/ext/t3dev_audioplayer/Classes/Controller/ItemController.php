@@ -35,9 +35,12 @@ class ItemController extends AbstractController
     public function listAction()
     {
 
-        $this->setHeaders();
         $storagePage = $this->settings['storagePage'];
-        //$items = $this->itemRepository->findAll();
+        $theme = $this->settings['theme'];
+        $this->setHeaders($theme);
+
+        //\TYPO3\CMS\Core\Utility\DebugUtility::debug($theme);
+
         $items = $this->itemRepository->findAllByPid($storagePage);
         $this->view->assign('items', $items);
         $this->view->assign('storagePage', $storagePage);

@@ -18,6 +18,9 @@
 			<trans-unit id="tx_t3devaudioplayer_domain_model_item.song_url">
 				<source>Song Url</source>
 			</trans-unit>
+			<trans-unit id="tx_t3devaudioplayer_domain_model_item.page_url">
+				<source>Page Url</source>
+			</trans-unit>
 			<trans-unit id="tx_t3devaudioplayer_domain_model_item.song_duration">
 				<source>Song Duration</source>
 			</trans-unit>
@@ -36,6 +39,15 @@
 			</trans-unit>
 			<trans-unit id="tx_t3dev_audioplayer.flexforms_general.storage_page">
 				<source>Storage page</source>
+			</trans-unit>
+			<trans-unit id="tx_t3dev_audioplayer.flexforms_general.theme">
+				<source>Select theme</source>
+			</trans-unit>
+			<trans-unit id="tx_t3dev_audioplayer.flexforms_general.blue_playlist">
+				<source>Blue Playlist</source>
+			</trans-unit>
+			<trans-unit id="tx_t3dev_audioplayer.flexforms_general.flat_black">
+				<source>Flat Black</source>
 			</trans-unit>
 
 		</body>

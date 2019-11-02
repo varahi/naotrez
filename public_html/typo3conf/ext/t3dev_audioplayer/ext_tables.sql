@@ -9,5 +9,6 @@ CREATE TABLE tx_t3devaudioplayer_domain_model_item (
 	song_url varchar(255) DEFAULT '' NOT NULL,
 	song_duration varchar(255) DEFAULT '' NOT NULL,
 	cover int(11) unsigned NOT NULL default '0',
+	page_url varchar(255) DEFAULT '' NOT NULL,
 
 );

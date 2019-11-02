@@ -1,0 +1,56 @@
+<div id="player-screen">
+    <div class="player-header down-header">
+        <img id="down" src="typo3conf/ext/t3dev_audioplayer/Resources/Public/flat-black/img/down.svg"/>
+        {f:translate(id:'show_playlist')}
+    </div>
+    <div id="player-top">
+        <img data-amplitude-song-info="cover_art_url"/>
+    </div>
+    <div id="player-progress-bar-container">
+        <progress id="song-played-progress" class="amplitude-song-played-progress"></progress>
+        <progress id="song-buffered-progress" class="amplitude-buffered-progress" value="0"></progress>
+    </div>
+    <div id="player-middle">
+        <div id="time-container">
+            <span class="amplitude-current-time time-container"></span>
+            <span class="amplitude-duration-time time-container"></span>
+        </div>
+        <div id="meta-container">
+            <span data-amplitude-song-info="name" class="song-name"></span>
+
+            <div class="song-artist-album">
+                <span data-amplitude-song-info="artist"></span>
+            </div>
+        </div>
+    </div>
+    <div id="player-bottom">
+        <div id="control-container">
+
+            <div id="shuffle-container">
+                <div class="amplitude-shuffle amplitude-shuffle-off" id="shuffle"></div>
+            </div>
+
+            <div id="prev-container">
+                <div class="amplitude-prev" id="previous"></div>
+            </div>
+
+            <div id="play-pause-container">
+                <div class="amplitude-play-pause" id="play-pause"></div>
+            </div>
+
+            <div id="next-container">
+                <div class="amplitude-next" id="next"></div>
+            </div>
+
+            <div id="repeat-container">
+                <div class="amplitude-repeat" id="repeat"></div>
+            </div>
+
+        </div>
+
+        <div id="volume-container">
+            <img src="typo3conf/ext/t3dev_audioplayer/Resources/Public/flat-black/img/volume.svg"/>
+            <input type="range" class="amplitude-volume-slider" step=".1"/>
+        </div>
+    </div>
+</div>
