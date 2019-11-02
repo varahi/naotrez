@@ -12,8 +12,8 @@ config {
 
     navigation {
         rootPid = 1
-        excludeUidList = 0 | -1
-        specialRange =
+        //excludeUidList =
+        specialRange = 0 | -1
     }
 
     header {

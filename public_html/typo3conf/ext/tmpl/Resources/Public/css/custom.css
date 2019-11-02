@@ -26,5 +26,27 @@ div#player-bottom div#volume-container img {
     display: block;
     float: left;
     margin-top: 30px;
+}
+.white {
 
+}
+
+/* Powermial */
+.powermail__form_submit {
+    margin-top: 15px;
+}
+.powermail label {
+    display: none;
+}
+.powermail input[type=text],
+.powermail input[type=email]{
+    margin-bottom: 15px;
+}
+ul.parsley-errors-list {
+    padding: 0;
+}
+ul.parsley-errors-list li {
+    list-style: none;
+    color: #ff0000;
+    margin-left: 10px;
 }
