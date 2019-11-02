@@ -14,3 +14,17 @@ body {
 audio {
     width: 100%;
 }
+
+div.player-header,
+div#list-screen div#list-screen-header {
+    height: 55px;
+}
+div#player-bottom div#volume-container input[type="range"].amplitude-volume-slider {
+    margin-top: 30px;
+}
+div#player-bottom div#volume-container img {
+    display: block;
+    float: left;
+    margin-top: 30px;
+
+}

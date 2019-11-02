@@ -15,7 +15,7 @@ styles {
         textmedia.maxW = 800
         textmedia.maxWInText = 800
         textmedia.linkWrap.lightboxEnabled = 1
-        defaultHeaderType = 2
+        defaultHeaderType = 1
     }
 
     templates {
@@ -25,3 +25,6 @@ styles {
     }
 }
 
+//styles.content.textmedia.maxW = 1200
+//styles.content.textmedia.maxWInText = 1200
+//styles.content.textmedia.linkWrap.width = 1000m

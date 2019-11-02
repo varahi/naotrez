@@ -1,6 +1,7 @@
 # manually inserted CSS files
 page.includeCSS {
     10_fonts = https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700
+    15_fonts = https://fonts.googleapis.com/css?family=Lato:400,400i
     20_animate  = EXT:tmpl/Resources/Public/css/animate.css
     30_icomoon = EXT:tmpl/Resources/Public/css/icomoon.css
     40_bootstrap  = EXT:tmpl/Resources/Public/css/bootstrap.css
