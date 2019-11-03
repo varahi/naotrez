@@ -36,6 +36,9 @@ div#list-screen div#list {
 div#single-song-player{
     margin-bottom: 30px;
 }
+.tx-powermail {
+    padding-top: 20px;
+}
 
 /* Powermial */
 .powermail__form_submit {

@@ -1,0 +1,15 @@
+lib.metrika >
+lib.metrika = RECORDS
+lib.metrika {
+    wrap = |
+    source = {$config.metrika}
+    dontCheckPid = 1
+    tables = tt_content
+}
+
+lib.metrika >
+
+page.footerData.999 = TEXT
+page.footerData.999.value (
+    <!-- Some code -->
+)

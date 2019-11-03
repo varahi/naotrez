@@ -35,6 +35,8 @@ config {
         keywords =
     }
 
+    //metrika = 94
+
 }
 
 [tree.level in [3]]

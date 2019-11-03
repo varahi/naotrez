@@ -11,6 +11,11 @@
 			<trans-unit id="header.h2_animate-box">
 				<source><![CDATA[H2 animate box]]></source>
 			</trans-unit>
+
+			<trans-unit id="page.hide_breadcrumb">
+				<source><![CDATA[Hide breadcrumb]]></source>
+			</trans-unit>
+
 		</body>
 	</file>
 </xliff>
