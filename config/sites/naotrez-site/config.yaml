@@ -1,4 +1,4 @@
-base: 'https://naotrez.site'
+base: 'http://naotrez.site'
 baseVariants:
   -
     base: 'http://naotrez.localhost'
