@@ -1,9 +1,13 @@
-rootPageId: 1
 base: 'https://naotrez.site'
 baseVariants:
   -
     base: 'http://naotrez.localhost'
     condition: 'getenv("HOST_ENV") == "localdev"'
+errorHandling:
+  -
+    errorCode: '404'
+    errorHandler: Page
+    errorContentSource: 't3://page?uid=27'
 languages:
   -
     title: Russian
@@ -17,16 +21,7 @@ languages:
     hreflang: ru-RU
     direction: ''
     flag: ru
-errorHandling:
-  -
-    errorCode: '403'
-    errorHandler: Page
-    errorContentSource: '6577'
-  -
-    errorCode: '404'
-    errorHandler: Page
-    errorContentSource: '9'
-routes: {  }
+rootPageId: 1
 routeEnhancers:
   NewsPlugin:
     type: Extbase
@@ -57,3 +52,4 @@ routeEnhancers:
         type: StaticRangeMapper
         start: '1'
         end: '100'
+routes: {  }
