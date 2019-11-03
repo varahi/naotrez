@@ -21,8 +21,8 @@ page.meta {
 
     local_all           = {$config.locale_all}
     language            = {$config.language}
-    //robots              = index,follow
-    robots               = noindex,nofollow
+    robots              = index,follow
+    //robots               = noindex,nofollow
     #sviewport = width=device-width
     viewport             = width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes
     #MSSmartTagsPreventParsing = true

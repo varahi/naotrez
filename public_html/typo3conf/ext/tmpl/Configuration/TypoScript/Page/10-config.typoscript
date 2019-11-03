@@ -81,11 +81,9 @@ config {
         }
     }
 
-
-
 }
 
 page.config.headerComment (
-  Dmitry Vasilev dmitry@t3dev.ru
+  Programming by Dmitry Vasilev dmitry@t3dev.ru
   ___________________________________
 )

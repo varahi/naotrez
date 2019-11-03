@@ -30,6 +30,12 @@ div#player-bottom div#volume-container img {
 .white {
 
 }
+div#list-screen div#list {
+    overflow-y: auto;
+}
+div#single-song-player{
+    margin-bottom: 30px;
+}
 
 /* Powermial */
 .powermail__form_submit {
