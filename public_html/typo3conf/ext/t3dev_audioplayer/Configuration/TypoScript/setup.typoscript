@@ -1,5 +1,11 @@
 
 plugin.tx_t3devaudioplayer {
+    settings {
+        bluePlaylist = blue_playlist
+        flatBlack = flat_black
+        singleSong = single_song
+    }
+
     view {
         templateRootPaths.0 = EXT:{extension.shortExtensionKey}/Resources/Private/Templates/
         templateRootPaths.1 = {$plugin.tx_t3devaudioplayer.view.templateRootPath}

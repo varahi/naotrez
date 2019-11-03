@@ -33,7 +33,6 @@
 			<trans-unit id="tx_t3dev_audioplayer_t3devaudioplayer.description">
 				<source>T3Dev music player</source>
 			</trans-unit>
-
 			<trans-unit id="tx_t3dev_audioplayer.flexforms_general.settings">
 				<source>Settings</source>
 			</trans-unit>
@@ -48,6 +47,12 @@
 			</trans-unit>
 			<trans-unit id="tx_t3dev_audioplayer.flexforms_general.flat_black">
 				<source>Flat Black</source>
+			</trans-unit>
+			<trans-unit id="tx_t3dev_audioplayer.flexforms_general.single_song">
+				<source>Single song</source>
+			</trans-unit>
+			<trans-unit id="tx_t3dev_audioplayer.flexforms_general.choose_song">
+				<source>Please choose song</source>
 			</trans-unit>
 
 		</body>

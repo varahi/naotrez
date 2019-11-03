@@ -3,21 +3,21 @@
 
 	<f:section name="content">
 
-		<f:if condition="{settings.theme} == 'blue_playlist' ">
+		<f:if condition="{settings.theme} == {settings.bluePlaylist}">
 			<!-- Amplitude Player -->
 			<div id="amplitude-player">
 				<!-- Left Side Player -->
-				<f:render partial="BluePlaylist/LeftSidePLayer" arguments="{item:item}" />
+				<f:render partial="BluePlaylist/LeftSidePLayer" />
 				<!-- Right Side Player -->
-				<f:render partial="BluePlaylist/RightSidePlayer" arguments="{_all}" />
+				<f:render partial="BluePlaylist/RightSidePlayer" arguments="{items:items}" />
 
 				<!-- Js script -->
-				<f:render partial="BluePlaylist/AmplitudeJS" arguments="{items:items}" />
-				<f:render partial="BluePlaylist/AmplitudeInit" />
+				<f:render partial="BluePlaylist/AmplitudeJS" />
+				<f:render partial="BluePlaylist/AmplitudeInit" arguments="{items:items}" />
 			</div>
 		</f:if>
 
-		<f:if condition="{settings.theme} == 'flat_black' ">
+		<f:if condition="{settings.theme} == {settings.flatBlack}">
 			<div id="flat-black-player-container">
 				<!-- List Screen -->
 				<f:render partial="FlatBlack/ListScreen" arguments="{items:items}" />
@@ -27,6 +27,13 @@
 
 			<!-- Js script -->
 			<f:render partial="FlatBlack/Functions.html" arguments="{items:items}" />
+		</f:if>
+
+		<f:if condition="{settings.theme} == {settings.singleSong}">
+			<!-- Single song player -->
+			<f:render partial="SingleSong/SingleSongPlayer" />
+			<!-- Js script -->
+			<f:render partial="SingleSong/Functions.html" arguments="{item:item}" />
 		</f:if>
 
 	</f:section>

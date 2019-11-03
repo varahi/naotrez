@@ -10,6 +10,14 @@ use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 class AbstractController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
 {
 
+    /**
+     * persistenceManager
+     *
+     * @var \TYPO3\CMS\Extbase\Persistence\Generic\PersistenceManager
+     * @inject
+     */
+    protected $persistenceManager = null;
+
     /*
     * setHeaders
     * Set JS and CSS according to TS settings
@@ -31,67 +39,18 @@ class AbstractController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControl
             $pageRender = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Core\Page\PageRenderer::class);
             $pageRender->addJsFile($jsFilePlayer, 'text/javascript', true, false, '', true);
 
-            if($theme == 'blue_playlist') {
+            if($theme ==  $this->settings['bluePlaylist']) {
                 $cssFile = $extPath . 'Resources/Public/blue-playlist/css/app.css';
             }
-            if($theme == 'flat_black') {
+            if($theme ==  $this->settings['flatBlack']) {
                 $cssFile = $extPath . 'Resources/Public/flat-black/css/app.css';
+            }
+            if($theme ==  $this->settings['singleSong']) {
+                $cssFile = $extPath . 'Resources/Public/single-song/css/app.css';
             }
             $pageRender->addCssFile($cssFile, 'stylesheet', 'all', '', '', true);
 
         }
     }
-
-    /**
-     * persistenceManager
-     *
-     * @var \TYPO3\CMS\Extbase\Persistence\Generic\PersistenceManager
-     * @inject
-     */
-    protected $persistenceManager = null;
-
-    /**
-     * configurationManager
-     *
-     * @var \TYPO3\CMS\Extbase\Configuration\ConfigurationManager
-     * @inject
-     */
-    protected $configurationManager = null;
-
-    /**
-     * Build config array (get from $GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf']['t3dev_audioplayer'])
-     * if empty then set default values for configuration
-     *
-     * @return array Configuration
-     */
-    protected function getConfiguration() {
-        if (empty($this->configuration)) {
-            $configuration = $GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf']['t3dev_audioplayer'];
-            if (is_string($configuration)) {
-                $configuration = unserialize($configuration);
-            }
-            // set default values if no global conf found
-            if (empty($configuration)) {
-                $configuration = array(
-                    'pid' => 0
-                );
-            }
-            $this->configuration = $configuration;
-        }
-        return $this->configuration;
-    }
-
-
-    /**
-     * Page id (from extension configuration)
-     *
-     * @return int pid (Page id)
-     */
-    protected function getPidExtensionConfiguration()
-    {
-        $config = $this->getConfiguration();
-        return $config['pid'];
-    }
-
 
 }

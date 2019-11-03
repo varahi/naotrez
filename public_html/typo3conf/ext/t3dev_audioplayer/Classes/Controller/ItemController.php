@@ -35,25 +35,23 @@ class ItemController extends AbstractController
     public function listAction()
     {
 
-        $storagePage = $this->settings['storagePage'];
         $theme = $this->settings['theme'];
         $this->setHeaders($theme);
 
-        //\TYPO3\CMS\Core\Utility\DebugUtility::debug($theme);
+        // Select song from playlist
+        if($theme == $this->settings['bluePlaylist'] || $this->settings['flatBlack']) {
+            $storagePage = $this->settings['storagePage'];
+            $items = $this->itemRepository->findAllByPid($storagePage);
+            $this->view->assign('items', $items);
+        }
 
-        $items = $this->itemRepository->findAllByPid($storagePage);
-        $this->view->assign('items', $items);
-        $this->view->assign('storagePage', $storagePage);
-    }
+        // Select single song
+        if($theme == $this->settings['singleSong']) {
+            $uid = $this->settings['selectSong'];
+            $song = $this->itemRepository->findByUid($uid);
+            $this->view->assign('item', $song);
+        }
 
-    /**
-     * action show
-     * 
-     * @param \T3Dev\T3devAudioplayer\Domain\Model\Item $item
-     * @return void
-     */
-    public function showAction(\T3Dev\T3devAudioplayer\Domain\Model\Item $item)
-    {
-        $this->view->assign('item', $item);
+        //\TYPO3\CMS\Core\Utility\DebugUtility::debug($song);
     }
 }
