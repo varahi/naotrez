@@ -22,6 +22,7 @@ page.includeCSS {
 #}
 
 page.includeJS {
+    00_vk_api = https://vk.com/js/api/openapi.js?162
     10_modernizr = EXT:tmpl/Resources/Public/js/modernizr-2.6.2.min.js
     20_respond = EXT:tmpl/Resources/Public/js/respond.min.js
 }
@@ -43,8 +44,12 @@ page.includeJSFooterlibs {
 
 page {
     headerData {
-        //998 = TEXT
-        //998.value =
+        998 = TEXT
+        998.value (
+        <script type="text/javascript">
+            VK.init({apiId: 7195173, onlyWidgets: true});
+        </script>
+        )
     }
 }
 
