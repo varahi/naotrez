@@ -46,9 +46,9 @@ page {
     headerData {
         998 = TEXT
         998.value (
-        <script type="text/javascript">
-            VK.init({apiId: 7195173, onlyWidgets: true});
-        </script>
+<script type="text/javascript">
+  VK.init({apiId: 7195240, onlyWidgets: true});
+</script>
         )
     }
 }
