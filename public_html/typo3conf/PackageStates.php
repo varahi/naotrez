@@ -101,14 +101,20 @@ return [
         'viewpage' => [
             'packagePath' => 'typo3/sysext/viewpage/',
         ],
+        'fancybox' => [
+            'packagePath' => 'typo3conf/ext/fancybox/',
+        ],
+        'gridgallery' => [
+            'packagePath' => 'typo3conf/ext/gridgallery/',
+        ],
         'rte_ckeditor_image' => [
             'packagePath' => 'typo3conf/ext/rte_ckeditor_image/',
         ],
         'cs_seo' => [
             'packagePath' => 'typo3conf/ext/cs_seo/',
         ],
-        'fancybox' => [
-            'packagePath' => 'typo3conf/ext/fancybox/',
+        'extension_builder' => [
+            'packagePath' => 'typo3conf/ext/extension_builder/',
         ],
         'gridelements' => [
             'packagePath' => 'typo3conf/ext/gridelements/',
@@ -127,6 +133,9 @@ return [
         ],
         'sourceopt' => [
             'packagePath' => 'typo3conf/ext/sourceopt/',
+        ],
+        't3dev_audioplayer' => [
+            'packagePath' => 'typo3conf/ext/t3dev_audioplayer/',
         ],
         'tmpl' => [
             'packagePath' => 'typo3conf/ext/tmpl/',
