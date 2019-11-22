@@ -6,7 +6,7 @@ body {
 }
 .blog-entry .desc {
     padding: 25px;
-    min-height: 450px;
+    min-height: 470px;
 }
 .blog-entry .blog-img img {
     max-width: none;
