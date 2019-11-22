@@ -7,10 +7,18 @@
     </aside>
 
     <div id="fh5co-main">
-        <div class="fh5co-narrow-content">
-            <f:render partial="Breadcrumb" arguments="{_all}" />
-            <f:render section="section_content" />
-        </div>
+        <f:if condition="{data.hide_content_class} == 1">
+            <f:then>
+                <f:render partial="Breadcrumb" arguments="{_all}" />
+                <f:render section="section_content" />
+            </f:then>
+            <f:else>
+                <div class="fh5co-narrow-content">
+                    <f:render partial="Breadcrumb" arguments="{_all}" />
+                    <f:render section="section_content" />
+                </div>
+            </f:else>
+        </f:if>
     </div>
 </div>
 

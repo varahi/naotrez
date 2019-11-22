@@ -15,6 +15,9 @@
 			<trans-unit id="page.hide_breadcrumb">
 				<source><![CDATA[Hide breadcrumb]]></source>
 			</trans-unit>
+			<trans-unit id="page.hide_content_class">
+				<source><![CDATA[Hide content class]]></source>
+			</trans-unit>
 
 		</body>
 	</file>
