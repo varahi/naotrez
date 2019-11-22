@@ -35,12 +35,11 @@ lib.breadcrumb {
     }
 }
 
-[globalVar = GP:tx_news_pi1|news > 0]
-    #[globalVar = TSFE:id = 15]
+[request.getQueryParams()['tx_news_pi1']['news'] > 0] || [request.getParsedBody()['tx_news_pi1']['news'] > 0]
     lib.breadcrumb >
     lib.breadcrumb = COA
     lib.breadcrumb {
-        stdWrap.wrap = |
+        stdWrap.wrap = <nav aria-label="breadcrumb"><ol class="breadcrumb">|</ol></nav>
         10 = HMENU
         10.includeNotInMenu = 0
         10 {
@@ -51,20 +50,17 @@ lib.breadcrumb {
                 noBlur = 1
                 NO = 1
                 NO {
-                    wrapItemAndSub = |
+                    wrapItemAndSub =
                     ATagTitle.field = subtitle // title
                     stdWrap.htmlSpecialChars = 1
                     stdWrap.field = subtitle // title
-
                     linkWrap = <li class="breadcrumb-item">|</li>
-                    ATagBeforeWrap = 1
                 }
 
                 CUR <.NO
                 CUR {
-                    wrapItemAndSub = |
                     doNotLinkIt = 1
-                    linkWrap = |
+                    linkWrap = <li class="breadcrumb-item active" aria-current="page">|</li>
                 }
             }
         }
