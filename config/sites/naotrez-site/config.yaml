@@ -52,4 +52,12 @@ routeEnhancers:
         type: StaticRangeMapper
         start: '1'
         end: '100'
-routes: {  }
+routes:
+  -
+    route: sitemap.xml
+    type: uri
+    source: 't3://page?uid=1&type=1533906435'
+  -
+    route: robots.txt
+    type: staticText
+    content: "User-Agent: *\r\nAllow: /\r\nAllow: *.css\r\nAllow: *.js\r\nAllow: /typo3/sysext/frontend/Resources/Public/*\r\nDisallow: /fileadmin/\r\nDisallow: /typo3/\r\nDisallow: /typo3conf/\r\nDisallow: /typo3temp/\r\nDisallow: /*?id=*\r\nDisallow: /*&type=98\r\nSitemap: http://naotrez.site/?sitemap=pages&type=1533906435\r\nHost: naotrez.site\r\n"
