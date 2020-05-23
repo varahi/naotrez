@@ -1,5 +1,13 @@
-plugin.tx_news.settings.sitemap.startingpoint = 0
-plugin.tx_news.settings.sitemap.detailPid = 0
-plugin.tx_news.view.templateRootPath = EXT:tmpl/Resources/Private/Extensions/news/Templates/
-plugin.tx_news.view.partialRootPath = EXT:tmpl/Resources/Private/Extensions/news/Partials/
-plugin.tx_news.view.layoutRootPath = EXT:tmpl/Resources/Private/Extensions/news/Layouts/
+plugin.tx_news {
+    view {
+        templateRootPath = EXT:tmpl/Resources/Private/Extensions/news/Templates/
+        partialRootPath = EXT:tmpl/Resources/Private/Extensions/news/Partials/
+        layoutRootPath = EXT:tmpl/Resources/Private/Extensions/news/Layouts/
+    }
+    settings {
+        #sitemap {
+        #    startingpoint = 29
+        #    detailPid = 30
+        #}
+    }
+}
