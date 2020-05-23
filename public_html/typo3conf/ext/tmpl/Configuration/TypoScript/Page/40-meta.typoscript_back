@@ -1,0 +1,57 @@
+/*
+page.meta {
+    revisit             = 1
+    revisit-after       = 7 days
+    imagetoolbar        = no
+
+    keywords.field      = keywords
+    keywords.ifEmpty    = {$config.meta.keywords}
+    description.field   = description
+    description.ifEmpty = {$config.meta.description}
+
+    #abstract.field      = abstract
+    #abstract.ifEmpty    = {$page.meta.abstract}
+    #page-topic.field    = title
+    #page-topic.ifEmpty  = {$page.meta.topic}
+    #author              = {$page.meta.autor}
+
+    cache-control = max-age=0
+    cache-control = no-cache
+    expires = 0
+    pragma = no-cache
+
+    local_all           = {$config.locale_all}
+    language            = {$config.language}
+    robots              = index,follow
+    //robots               = noindex,nofollow
+    #sviewport = width=device-width
+    viewport             = width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes
+    #MSSmartTagsPreventParsing = true
+    SKYPE_TOOLBAR = SKYPE_TOOLBAR_PARSER_COMPATIBLE
+
+    X-UA-Compatible = IE=edge
+    X-UA-Compatible.attribute = http-equiv
+
+    # OpenGraph tags if empty
+    og:description.ifEmpty = {$config.meta.og_description}
+    twitter:description.ifEmpty = {$config.meta.twitter_description}
+    og:title {
+        attribute = property
+        field = title
+    }
+    twitter:title {
+        attribute = property
+        field = title
+    }
+    og:site_name {
+        attribute = property
+        data = TSFE:tmpl|setup|sitetitle
+    }
+    og:description = {$page.meta.description}
+    og:description {
+        attribute = property
+        field = description
+    }
+
+}
+*/

@@ -4,7 +4,6 @@ $_CEKEY  = 'ce_mainpage_slider';
 $_EXTKEY = 'tmpl';
 
 call_user_func(function () {
-
     $languageFilePrefix = 'LLL:EXT:fluid_styled_content/Resources/Private/Language/Database.xlf:';
     $customLanguageFilePrefix = 'LLL:EXT:tmpl/Resources/Private/Language/locallang_db.xlf:';
     $frontendLanguageFilePrefix = 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:';
@@ -46,7 +45,7 @@ $tmp_columns = [
     ],
 ];
 
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content',$tmp_columns);
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', $tmp_columns);
 
 $GLOBALS['TCA']['tt_content']['types'][$_CEKEY] = [
     'showitem' => '
@@ -54,4 +53,3 @@ $GLOBALS['TCA']['tt_content']['types'][$_CEKEY] = [
 		--palette--;LLL:EXT:cms/locallang_ttc.xml:palette.header;header,slider_data_speed,
 		tx_gridelements_container,tx_gridelements_columns,tx_slider_item,tx_tmplcemainslider_item'
 ];
-

@@ -1,0 +1,17 @@
+lib.yaShare = COA
+lib.yaShare {
+    wrap = <div class="yandex-share">|</div><div class="clear"></div>
+    10 = TEXT
+    10 {
+        wrap = <p>|</p>
+        value = {$config.content.share}
+    }
+    20 = TEXT
+    20 {
+        value (
+        <script src="https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+        <script src="https://yastatic.net/share2/share.js"></script>
+        <div class="ya-share2" data-services="collections,vkontakte,facebook,twitter,whatsapp,telegram"></div>
+        )
+    }
+}

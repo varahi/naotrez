@@ -34,7 +34,7 @@ $GLOBALS['TCA']['tt_content']['types'][$_CEKEY]['columnsOverrides'] = [
             [
                 'appearance' => [
                     'createNewRelationLinkTitle' => 'LLL:EXT:cms/locallang_ttc.xlf:images.addFileReference',
-                    'fileUploadAllowed' => FALSE,
+                    'fileUploadAllowed' => false,
                 ],
                 'foreign_types' => [
                     '0' => [
