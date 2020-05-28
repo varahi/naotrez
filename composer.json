@@ -29,6 +29,7 @@
 		"deployer/deployer": "^6",
 		"fluidtypo3/vhs": "^5.2",
 		"friendsoftypo3/extension-builder": "^9.10",
+		"friendsoftypo3/frontend-editing": "^1.9",
 		"georgringer/news": "^7.3",
 		"gridelementsteam/gridelements": "^9.2",
 		"helhum/config-loader": "0.9",
