@@ -1,7 +1,7 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
     "content-hash": "a746402d2b7e4b3519af18850e5c9b23",
@@ -916,6 +916,7 @@
                 "phar",
                 "update"
             ],
+            "abandoned": true,
             "time": "2018-02-27T17:29:10+00:00"
         },
         {
@@ -6300,6 +6301,12 @@
                 "url": "https://github.com/TYPO3/minimal.git",
                 "reference": "6ca773e3a90f193ef6cbac7be810d2e8eb6d06fc"
             },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TYPO3/minimal/zipball/6ca773e3a90f193ef6cbac7be810d2e8eb6d06fc",
+                "reference": "6ca773e3a90f193ef6cbac7be810d2e8eb6d06fc",
+                "shasum": ""
+            },
             "require": {
                 "typo3/cms-backend": "9.5.*@dev",
                 "typo3/cms-core": "9.5.*@dev",
@@ -6324,13 +6331,13 @@
             "authors": [
                 {
                     "name": "The TYPO3 Community",
-                    "role": "Contributor",
-                    "homepage": "https://typo3.org/community/"
+                    "homepage": "https://typo3.org/community/",
+                    "role": "Contributor"
                 },
                 {
                     "name": "TYPO3 CMS Core Team",
-                    "role": "Developer",
-                    "homepage": "https://forge.typo3.org/projects/typo3cms-core"
+                    "homepage": "https://forge.typo3.org/projects/typo3cms-core",
+                    "role": "Developer"
                 }
             ],
             "description": "Minimal required set of TYPO3 extensions",
@@ -6388,16 +6395,16 @@
         },
         {
             "name": "typo3fluid/fluid",
-            "version": "2.6.6",
+            "version": "2.6.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3/Fluid.git",
-                "reference": "e87f24a7ae005c911a78b9c1445c09d2bdfb8b54"
+                "reference": "f20db4e74cf9803c6cffca2ed2f03e1b0b89d0dc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3/Fluid/zipball/e87f24a7ae005c911a78b9c1445c09d2bdfb8b54",
-                "reference": "e87f24a7ae005c911a78b9c1445c09d2bdfb8b54",
+                "url": "https://api.github.com/repos/TYPO3/Fluid/zipball/f20db4e74cf9803c6cffca2ed2f03e1b0b89d0dc",
+                "reference": "f20db4e74cf9803c6cffca2ed2f03e1b0b89d0dc",
                 "shasum": ""
             },
             "require": {
@@ -6423,7 +6430,7 @@
                 "LGPL-3.0-or-later"
             ],
             "description": "The TYPO3 Fluid template rendering engine",
-            "time": "2019-10-30T11:25:42+00:00"
+            "time": "2020-11-16T21:38:14+00:00"
         }
     ],
     "packages-dev": [
@@ -6723,8 +6730,8 @@
             "authors": [
                 {
                     "name": "Martin Helmich",
-                    "role": "lead",
-                    "email": "m.helmich@mittwald.de"
+                    "email": "m.helmich@mittwald.de",
+                    "role": "lead"
                 }
             ],
             "description": "Parser for the TYPO3 configuration language TypoScript.",
@@ -8340,6 +8347,7 @@
             "keywords": [
                 "tokenizer"
             ],
+            "abandoned": true,
             "time": "2019-09-17T06:23:10+00:00"
         },
         {
@@ -9546,5 +9554,6 @@
     "platform-dev": [],
     "platform-overrides": {
         "php": "7.2"
-    }
+    },
+    "plugin-api-version": "1.1.0"
 }
