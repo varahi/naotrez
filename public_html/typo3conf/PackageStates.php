@@ -101,6 +101,12 @@ return [
         'viewpage' => [
             'packagePath' => 'typo3/sysext/viewpage/',
         ],
+        'cs_seo' => [
+            'packagePath' => 'typo3conf/ext/cs_seo/',
+        ],
+        'frontend_editing' => [
+            'packagePath' => 'typo3conf/ext/frontend_editing/',
+        ],
         'fancybox' => [
             'packagePath' => 'typo3conf/ext/fancybox/',
         ],
@@ -109,9 +115,6 @@ return [
         ],
         'rte_ckeditor_image' => [
             'packagePath' => 'typo3conf/ext/rte_ckeditor_image/',
-        ],
-        'cs_seo' => [
-            'packagePath' => 'typo3conf/ext/cs_seo/',
         ],
         'extension_builder' => [
             'packagePath' => 'typo3conf/ext/extension_builder/',
